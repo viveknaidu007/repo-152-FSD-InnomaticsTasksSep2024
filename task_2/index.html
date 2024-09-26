@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Company Directory Portal</h1>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section class="registration">
+        <h2>Employee Registration Form</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter full name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required>
+            
+            <label for="department">Department</label>
+            <select id="department" name="department" required>
+                <option value="Data Science">Engineering</option>
+                <option value="hr">HR</option>
+                <option value="marketing">Data Science</option>
+                <option value="marketing">Full Stack</option>
+                <option value="marketing">Artifical Inteligence</option>
+                <option value="marketing">Networking</option>
+            </select>
+            
+            <label for="employee-id">Employee ID</label>
+            <input type="number" id="employee-id" name="employee-id" placeholder="Enter employee ID" required>
+            
+            <label for="profile-pic">Profile Picture URL</label>
+            <input type="url" id="profile-pic" name="profile-pic" placeholder="Enter picture URL" required>
+            
+            <button type="submit">Register Employee</button>
+        </form>
+    </section>
+
+    <!-- Employee List Section -->
+    <section class="employee-list">
+        <h2>Employee List</h2>
+        <ol>
+            <li><a href="#">Vivek  [vivek@gmail.com]</a></li>
+            <li><a href="#">Teja  [Teja@gmail.com]</a></li>
+        </ol>
+    </section>
+
+    <!-- Employee Details Table -->
+    <section class="employee-details">
+        <h2>Employee Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>vivek</td>
+                    <td>innomatics-10245</td>
+                    <td>Full Stack</td>
+                    <td><img src="Untitled.jpg" alt="vivek's Profile"></td>
+                </tr>
+                <tr>
+                    <td>Teja</td>
+                    <td> innomatics-10546</td>
+                    <td>Data Sciecne</td>
+                    <td><img src="https://th.bing.com/th/id/OIP.0APFIRMrhLHJmNQDhSK3vAHaHa?rs=1&pid=ImgDetMain" alt="teja's  Profile"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Embedded Map Section -->
+    <section class="map-section">
+        <h2>Our Location</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1902.597884163716!2d78.388922!3d17.4981658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727330385074!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+</body>
+</html>
