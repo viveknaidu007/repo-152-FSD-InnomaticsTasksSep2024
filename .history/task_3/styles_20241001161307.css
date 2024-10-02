@@ -1,0 +1,113 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, nav, section, aside, footer {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Grid Layout for Desktop */
+body {
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    min-height: 100vh;
+}
+
+/* Assigning the grid areas */
+.header {
+    grid-area: header;
+    background: #f4f4f4;
+}
+
+.nav {
+    grid-area: nav;
+    background: orangered;
+    color: #fff;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 10px 0;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    grid-area: main;
+    background: white;
+}
+
+.aside {
+    grid-area: aside;
+    background: green;
+}
+
+.footer {
+    grid-area: footer;
+    background:aqua;
+    color: darkorchid;
+    text-align: center;
+    text-transform: capitalize;
+    text-justify: auto;
+
+}
+
+
+
+.header {
+    background-color: blueviolet;
+    color: yellow;
+    text-align: center;
+}
+
+
+
+
+
+/* Media Queries for Responsive Design */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    body {
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main aside"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    body {
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}
