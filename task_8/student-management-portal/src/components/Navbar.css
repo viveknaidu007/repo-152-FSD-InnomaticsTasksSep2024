@@ -1,0 +1,47 @@
+.custom-navbar {
+    background-color: rgb(45, 43, 52);
+    border-bottom: 4px solid #0dcaf0; /* Border for pop */
+  }
+  
+  .custom-brand {
+    font-weight: bold;
+    color: #0dcaf0;
+  }
+  
+  .custom-link {
+    color: #adb5bd;
+    font-size: 1.1rem;
+    margin-right: 50rem;
+    position: relative;
+    text-align: end;
+    padding-right: 50px;
+  }
+
+  .me-auto{
+    margin-right: 1.5rem;
+  }
+  
+  .custom-link:hover {
+    color: #0dcaf0;
+  }
+  
+  .custom-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0dcaf0;
+    transition: width 0.8s;
+    background-color: #0dcaf0;
+  }
+  
+  .custom-link:hover::after {
+    width: 100%;
+  }
+  
+
+  .custom-link {
+    margin-right: 20px; /* Space between links */
+    color: #f8f9fa !important; /* Ensure visibility */
+  }
+  
